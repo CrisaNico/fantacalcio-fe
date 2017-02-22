@@ -1,4 +1,4 @@
-app.service('SquadreService'['$http', 'settings', function($http, settings){
+app.service('SquadreService', ['$http', 'settings', function($http, settings ){
        
     var url = settings.url+"squadre.php";
     

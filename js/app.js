@@ -1,4 +1,4 @@
-var app = angular.module('sport', 
+var app = angular.module('fantacalcio', 
     ['ngRoute']);
 
 app.config(function ($routeProvider) { 
@@ -15,7 +15,7 @@ app.config(function ($routeProvider) {
       templateUrl: 'views/squadre.html' 
     })
     .when('/calciatori',{
-        controller: 'CalendarioController',
+        controller: 'CalendariController',
         templateUrl: 'views/calendario.html'
     })
     .otherwise({ 

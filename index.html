@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="lib/fontawesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />	 	
   </head>     
-  <body ng-app="sport">
+  <body ng-app="fantacalcio">
 	<div id="all" class="" ng-controller="AppController as app">
         <app-nav items="app.nav"></app-nav>
         <div ng-view class="container"></div>
@@ -21,8 +21,8 @@
 	<script src="lib/angular/angular-route.min.js"></script>  
 	<script src="js/app.js"></script>
 	<script src="js/controllers/appController.js"></script>
-        <script src="js/controllers/atletiController.js"></script>
-	<script src="js/services/atletiService.js"></script>
+        <script src="js/services/squadreService.js"></script>
+        <script src="js/controllers/squadreController.js"></script>
 	<script src="js/directives/appNavDirective.js"></script>	
   </body>
 </html>

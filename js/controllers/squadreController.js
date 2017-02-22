@@ -52,6 +52,7 @@ app.controller('SquadreController',['$routeParams', '$location', '$scope','Squad
             SquadreService.getItem(vm.id,vm.loadItem);
         }else{
             SquadreService.getList(vm.loadItems);
+            //vm.loadItems({'data':{'items':{}}});
         }
     };
     
