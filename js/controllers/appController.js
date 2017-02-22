@@ -5,8 +5,8 @@ app.controller('AppController', function() {
         url:"#/",
         title:"Home"
        },{
-        url:"#/atleti",
-        title:"Atleti"
+        url:"#/calciatori",
+        title:"Calciatori"
        }
     ];
 });
