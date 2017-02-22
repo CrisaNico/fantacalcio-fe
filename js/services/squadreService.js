@@ -1,5 +1,6 @@
 app.service('SquadreService'['$http', 'settings', function($http, settings){
-        var url = settings.url+"squadre.php";
+       
+    var url = settings.url+"squadre.php";
     
     var onError = function(response){
         console.log("Errore di chiamata:", response)

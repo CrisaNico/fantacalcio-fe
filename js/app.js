@@ -6,13 +6,13 @@ app.config(function ($routeProvider) {
     .when('/', { 
       templateUrl: 'views/home.html' 
     })
-    .when('/calciatori', { 
+    .when('/squadre', { 
       controller: 'SquadreController', 
       templateUrl: 'views/squadre.html' 
     })
-    .when('/calciatori/:id', { 
-      controller: 'CalciatoriController', 
-      templateUrl: 'views/calciatori.html' 
+    .when('/squadre/:id', { 
+      controller: 'SquadreController', 
+      templateUrl: 'views/squadre.html' 
     })
     .when('/calciatori',{
         controller: 'CalendarioController',

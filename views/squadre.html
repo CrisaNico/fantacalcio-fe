@@ -1,8 +1,8 @@
 <h1>
-    Registro degli Atleti
+    Squadre Registrare al campionato di Fantacalcio
 </h1>
 <p>
-    Questa pagina contiene l'elenco dei tesserati e dovrà:
+    Questa pagina contiene l'elenco delle squadre partecipanti al fantacalcio:
     <ul>
         <li>Permettere la cancellazione e creazione di un elemento</li>
         <li>Validare la creazione solo con obbligatorierà del campo nome</li>
@@ -14,22 +14,18 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Nome</th>
-            <th>Codice Fiscale</th>
-            <th>Telefono</th>
-            <th>Data di Nascita</th>
-            <th>Sesso</th>
+            <th>Denominazione</th>
+            <th>Allenatore</th>
+            <th>Data di Fondazione</th>
             <th><em>Azioni</em></th>
         </tr>
     </thead>
     <tbody>
         <tr ng-repeat="item in items">
             <td>{{item.id}}</td>
-            <td>{{item.nome}}</td>
-            <td>{{item.cf}}</td>
-            <td>{{item.telefono}}</td>
-            <td>{{item.datanascita | date}}</td>
-            <td>{{item.sesso}}</td>
+            <td>{{item.denominazione}}</td>
+            <td>{{item.allenatore}}</td>
+            <td>{{item.datafondazione | date}}</td>
             <td>
                 <a class="btn btn-sm btn-info" ng-click="view(item.id)"><i class="fa fa-eye"></i> Apri</a>
                 <a class="btn btn-sm btn-danger"  ng-click="del(item.id)"><i class="fa fa-trash"></i> Cancella</a>
