@@ -30,8 +30,8 @@ app.controller('SquadreController',['$routeParams', '$location', '$scope','Squad
         vm.message = response.data && response.data.message || "";
     };
 
-    vm.save = function(item){
-        SquadreService.saveItem(item,vm.loadItems);
+    vm.save = function(){
+        SquadreService.saveItem(vm.item,vm.loadItems);
     };
     
     vm.view = function(id){

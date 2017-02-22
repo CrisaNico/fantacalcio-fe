@@ -10,6 +10,26 @@
         <li>Presentare almeno un comportamento responsivo grazie ad a classi e css</li>
     </ul>
 </p>
+<br/>
+<div class="col-form-label">
+    <form>
+        <div>
+            <label>Denominazione</label>
+            <input ng-model="item.denominazione" type="text" placeholder="Inserire il nome della squadra" required />
+        </div>
+        <div>
+            <label>Allenatore</label>
+            <input ng-model="item.allenatore" type="text" placeholder="Inserire il nome dell'allenatore" required />
+        </div>
+        <div>
+            <label>Data di Fondazione</label>
+            <input ng-model="item.datafondazione" type="date" placeholder="Inserisci la data di fondazione" required/>
+        </div>
+        <button ng-click="save(item)">Salva</button>
+    </form>
+</div>
+<br/>
+<br/>
 <table class="table-bordered table table-responsive">
     <thead>
         <tr>
